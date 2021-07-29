@@ -1,0 +1,344 @@
+/*Vars Css*/
+
+:root{
+    --main-color: royalblue;
+    --main-second-color:rgb(41, 74, 173);
+    --text-size:18px;
+    --text-color:#222;
+    --text-second-color:#fff;
+}
+
+/*Global styles*/
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/*Menu Styles*/
+
+#lblMenu{
+    display: none;
+}
+
+#menuCheck{
+    display: none;
+}
+
+.here{
+    color: royalblue;
+}
+
+header{
+    width: 100%;
+    height:100px;
+    background-color: var(--text-second-color);
+    display: flex;
+    justify-content: center;
+}
+
+.logo-type{
+    width: 200px;
+    height: 100px;
+    object-fit: fill;
+}
+
+header nav{
+    width: 70%;
+    height:100%;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.menu li{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu li a{
+    text-decoration: none;
+    font-size: var(--text-size);
+    color: var(--text-color);
+}
+
+.menu li a:hover{
+    transition: 0.5s ease;
+    color: var(--main-color);
+}
+
+/*Caption Styles*/
+
+.caption{
+    width: 100%;
+    height: 610px;
+    background-image: url("https://onlinenursing.twu.edu/sites/default/files/styles/blogfeature_large/public/field/image/TWU-nurse-practitioner-vs-doctor-feature-1200x615-compressed.jpg?itok=JnhLYTTZ");
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-start;
+}
+
+.contentCaption{
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    width: 450px;
+    height: 300px;
+    padding: 10px;
+    display: block;
+    margin: 155px 30px;
+}
+
+.contentCaption h3{
+    display: block;
+    padding: 10px;
+    color: var(--main-second-color);
+}
+
+.contentCaption p{
+    width: 400px;
+    display: block;
+    margin-top:10px;
+    padding: 10px;
+    font-size: 20px;
+    color: var(--main-second-color);
+    font-family:var(--text-font);
+}
+
+#btn-whatsapp{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family:var(--text-font);
+    border-radius: 30px;
+    width: 200px;
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--text-second-color);
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+#btn-whatsapp:hover{
+    transition:all 0.5s ease;
+    background-color: rgb(131, 160, 247);
+    color: var(--text-second-color);
+}
+
+/*footer*/
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: var(--main-second-color);
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    display: block;
+    margin-top: 10px;
+    font-size: var(--text-size);
+    color: var(--text-second-color);
+    font-family:var(--text-font);
+}
+
+/*buttom UP*/
+
+.btn-up{
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--text-size);
+    color: var(--text-second-color);
+    font-family:var(--text-font);
+    background-color: var(--main-color);
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.btn-up:hover{
+    transition: 0.5s ease;
+    background-color: rgb(127, 157, 247);
+}
+
+.hidden{
+    opacity: 0;
+    transition: 0.5s ease;
+    visibility: hidden;
+}
+
+/*Buttom Theme*/
+
+.btn-theme{
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--text-size);
+    color: var(--text-second-color);
+    font-family:var(--text-font);
+    background-color: var(--main-color);
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.btn-theme:hover{
+    transition: 0.5s ease;
+    background-color: rgb(127, 157, 247);
+}
+
+.dark-theme{
+    background-color: var(--text-color);
+    color: var(--text-second-color);
+}
+
+/*Responsive*/
+
+@media screen and (max-width:768px) {
+
+    #lblMenu{
+        display: block;
+        padding: 10px;
+        font-size: 40px;
+        margin-top: 20px;
+        margin-left: 400px;
+        width:50px;
+        height: 50px;
+        cursor: pointer;
+        color: royalblue;
+    }
+    
+
+    header{
+        width: 483px;
+        height:100px;
+        background-color: var(--text-second-color);
+        display: block;
+        position: fixed;
+    }
+
+    .logo-type{
+        width: 200px;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-left: 35px;
+        object-fit: fill;
+    }
+    
+    header nav{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 50%;
+        height:100%;
+        z-index:10;
+        display: block;
+        background-color: rgb(165, 185, 245);
+        transform: translateX(-100%);
+        transition: all 0.5s ease;
+    }
+    
+    .menu{
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .menu li{
+        padding: 15px;
+        cursor: pointer;
+    }
+    .menu li:hover{
+        background-color: rgb(142, 153, 253);
+        transition: all 0.5s ease;
+    }
+
+    .menu li a:hover{
+        transition: all 0.5s ease;
+        color: #fff;
+    }
+
+    /*Caption Styles*/
+
+    .caption{
+        width: 483px;
+        height: 410px;
+        background-image: url("https://onlinenursing.twu.edu/sites/default/files/styles/blogfeature_large/public/field/image/TWU-nurse-practitioner-vs-doctor-feature-1200x615-compressed.jpg?itok=JnhLYTTZ");
+        display: flex;
+        background-position: center;
+        background-size: cover;
+        justify-content: flex-start;
+    }
+
+    .contentCaption{
+        border: 1px solid var(--main-color);
+        border-radius: 4px;
+        width: 450px;
+        height: 230px;
+        padding: 10px;
+        display: block;
+        margin: 135px 30px;
+    }
+
+    .contentCaption h3{
+        display: block;
+        padding: 10px;
+        color: var(--main-second-color);
+    }
+
+    .contentCaption p{
+        width: 400px;
+        display: block;
+        margin-top:10px;
+        padding: 10px;
+        font-size: 15px;
+        color: var(--main-second-color);
+        font-family:var(--text-font);
+    }
+
+    #btn-whatsapp{
+        display: block;
+        text-decoration: none;
+        padding: 5px;
+        margin-top: 20px;
+        font-size: 17px;
+        font-family:var(--text-font);
+        border-radius: 30px;
+        width: 200px;
+        text-align: center;
+        background-color: var(--main-color);
+        color: var(--text-second-color);
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+    }
+}

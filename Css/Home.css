@@ -1,0 +1,233 @@
+.welcome{
+    width: 100%;
+    height: 450px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.box-Welcome{
+    width: 700px;
+    height:100%;
+    margin-right: 40px;
+}
+.box-Welcome h2{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.box-Welcome p{
+    line-height: 20px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.box-image{
+    width:400px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.box-image img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/*Philosophy*/
+
+.institu{
+    width: 100%;
+    height: 430px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.box-philo{
+    width: 700px;
+    height:100%;
+    margin-right: 40px;
+}
+.box-philo h2{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.box-philo p{
+    line-height: 20px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.box-philo h3{
+    padding: 10px;
+}
+
+.philo-image{
+    width:400px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.philo-image img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/*Information box*/
+
+.information{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(182, 200, 255);
+}
+
+.information h2{
+    text-align: center;
+    font-size: 26px;
+    color: #222;
+    padding: 30px;
+}
+
+.cards{
+    width: 100%;
+    height:250px;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 350px;
+    height: 200px;
+    margin-left: 30px;
+}
+
+.card h3{
+    color: #222;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.card p{
+    color: #222;
+    font-size: 19px;
+    padding: 10px;
+}
+
+/*Responsive*/
+
+@media screen and (max-width:768px){
+    .welcome{
+        width: 483px;
+        height: 750px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box-Welcome{
+        width: 483px;
+        height:100%;
+        margin-right: 0px;
+    }
+    
+    .box-Welcome h2{
+        text-align: center;
+    }
+    .box-image{
+        width:350px;
+        height: 250px;
+        border-radius: 5px;
+        margin-left: 60px;
+    }
+    
+    .box-image img{
+        width: 350px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    /*Information box*/
+    
+    .information{
+        width: 483px;
+        height: 600px;
+        background-color: rgb(182, 200, 255);
+        margin-top: 30px;
+    }
+    
+    .information h2{
+        text-align: center;
+        font-size: 26px;
+        color: #222;
+        padding: 30px;
+    }
+    
+    .cards{
+        margin-top: 90px;
+        width: 100%;
+        height:250px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card{
+        width: 300px;
+        height: 200px;
+        margin-left: 100px;
+    }
+
+    .card h3{
+        font-size: 20px;
+    }
+
+    .card p{
+        font-size: 16px;
+    }
+
+    /*Philosophy*/
+    
+    .institu{
+        width: 483px;
+        height: 680px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .box-philo{
+        width: 483px;
+        height:500px;
+        margin-right: 40px;
+    }
+
+    .box-philo h2{
+        text-align: center;
+    }
+
+    .box-philo h3{
+        text-align: center;
+    }
+    
+    .philo-image{
+        width:250px;
+        height: 250px;
+        border-radius: 5px;
+        margin-left:105px;
+    }
+    
+    .philo-image img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+}
